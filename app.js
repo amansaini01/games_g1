@@ -27,6 +27,9 @@ app.get("/", (req, res) => {
 })
 
 
+app.get("/gamepage", (req, res) => {
+    res.render("gamepage");
+})
 
 
 
