@@ -44,7 +44,9 @@ app.get('/rps', function (req, res) {
 });
 
 
-
+app.get("/rps_v2", (req, res) => {
+    res.render("rps_v2");
+});
 
 
 
