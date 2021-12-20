@@ -8,7 +8,7 @@ const computerShowIcon = document.querySelector('.computer i');
 // Storing the scores.
 let computerScore = 1;
 let playerScore = 1;
-let round = 1;
+let round = 0;
 
 const rockIcon = "fas fa-hand-rock";
 const paperIcon = "fas fa-hand-paper";
@@ -19,24 +19,31 @@ const text = document.getElementById('demo');
 const text2 = document.getElementById('demo2');
 
 const tie = ()=>{
-    text.innerHTML = "Round " + round;
-    text.style.color = 'blue';
-    text2.innerHTML = "It's a Tie ! ";
-    text2.style.color = 'orange';
+    text.innerHTML = "It's a Tie ! ";
+    text.style.color = 'orange';
+    // text2.innerHTML = "It's a Tie ! ";
+    // text2.style.color = 'orange';
+    text2.innerHTML = "Round " + round;
+    text2.style.color = 'blue';
 }
 
 const win = ()=>{
-    text.innerHTML = "Round " + round;
-    text.style.color = 'blue';
-    text2.innerHTML = "It's a Win ! ";
-    text2.style.color = 'rgb(1, 146, 1)';
+    text.innerHTML = "It's a Win ! ";
+    text.style.color = 'rgb(1, 146, 1)';
+    // text2.innerHTML = "It's a Win ! ";
+    // text2.style.color = 'rgb(1, 146, 1)';
+    text2.innerHTML = "Round " + round;
+    text2.style.color = 'blue';
 }
 
 const lose = ()=>{
-    text.innerHTML = "Round " + round;
-    text.style.color = 'blue';
-    text2.innerHTML = "You Loosed ! ";
-    text2.style.color = 'red';
+    text.innerHTML = "You Loosed ! ";
+    text.style.color = 'red';
+    // text2.innerHTML = "You Loosed ! ";
+    // text2.style.color = 'red';
+    text2.innerHTML = "Round " + round;
+    text2.style.color = 'blue';
+    
 }
 
 // Game Functionality.
