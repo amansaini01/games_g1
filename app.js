@@ -49,6 +49,21 @@ app.get("/rps_v2", (req, res) => {
 });
 
 
+// Tic tac toe
+
+app.get("/tic_tac", (req, res) => {
+    res.render("tic_tac");
+});
+
+// Chess
+
+app.get('/chess', function (req, res) {
+    res.sendFile('chess.html', { root: './public/chess' });
+});
+
+
+
+
 
 //Listen On Server
 port = 8080
