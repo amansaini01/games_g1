@@ -61,8 +61,18 @@ app.get('/chess', function (req, res) {
     res.sendFile('chess.html', { root: './public/chess' });
 });
 
+// Flappy
+
+app.get("/flappy", (req, res) => {
+    res.render("flappy");
+});
 
 
+// Fruit-Ninja
+
+app.get('/f_ninja', function (req, res) {
+    res.sendFile('f_ninja.html', { root: './public/f_ninja' });
+});
 
 
 //Listen On Server
